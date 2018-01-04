@@ -1,0 +1,39 @@
+{
+  "name": "nr1355-homework05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-003-fall-2017/nr1355-homework05.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-003-fall-2017/nr1355-homework05/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-003-fall-2017/nr1355-homework05#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "eslint": "^4.10.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "mocha": "^4.0.1",
+    "mongoose": "^4.13.1",
+    "node-uuid": "^1.4.8",
+    "passport": "^0.4.0",
+    "passport-local-mongoose": "^4.4.0"
+  },
+  "devDependencies": {
+    "cookie-parser": "^1.4.3",
+    "eslint-plugin-mocha": "^4.11.0",
+    "mongoose": "^4.13.1",
+    "passport": "^0.4.0",
+    "passport-local-mongoose": "^4.4.0"
+  }
+}

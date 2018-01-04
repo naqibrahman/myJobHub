@@ -1,0 +1,53 @@
+
+<form method="POST" action="" >
+        <div class="form-group">
+            <label>Company</label> <input type="text" name="company">
+            <label>Position</label> <input type="text" name="position">
+            <label>Status</label>
+             <select name="status"> 
+                <option>Applied</option>
+                </select>
+            <label>Date Applied</label> <input type="date" name="date">
+            <label>Link</label> <input type="text" name="link">
+            <input type="submit">
+        </div>
+</form>
+<hr>
+<form method="POST" >
+    <div class = 'form-group'>
+        <label>Search By Company Name</label><input type="text" name="search" id = "search">
+        <input type ="submit" id= "btn">
+    </div>
+</form>
+<table class="table"> 
+    <caption> Job Applications With Applied Status</caption>
+    <thead>
+        <tr>
+            <th>Select</th>
+            <th>#</th>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>HyperLink</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <form  method="POST" action="/applied/delete">
+        {{#each Jobs as |Job|}}
+        <tr>
+            <td><input type="checkbox"  name = "toDelete" value="{{Job._id}}"></td>
+            <th scope="row">{{@index}}</th>
+            <td id = "company">{{Job.company}}</td> 
+            <td>{{Job.position}}</td> 
+            <td>{{Job.status}}</td> 
+            <td>{{Job.date}}</td> 
+            <td><a href="{{Job.link}}">Link</a></td> 
+        </tr>
+        {{/each}}
+        <input type="submit" value="Delete">
+        </form>
+    </tbody>
+</table>
+

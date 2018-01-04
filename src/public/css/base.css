@@ -1,0 +1,18 @@
+.jumbotron {
+    background-color:rgb(200, 234, 243); 
+}
+
+.jumbotron{
+    font-family: 'Slabo 27px';
+}
+.navbar-inverse {
+    background-color: rgb(200, 234, 243);
+    border: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.loggedin{
+    color: rgb(22, 58, 177);
+}
